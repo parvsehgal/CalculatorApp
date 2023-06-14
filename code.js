@@ -1,22 +1,15 @@
-function operation(op) {
-    let dis = document.querySelector('.screen');
-    dis.value += op;
-}
+let buttonDiv = document.querySelector('.buttons');
+let dis = document.querySelector('.screen');
 
-function numclick(numval) {
-    let dis = document.querySelector('.screen');
-    dis.value += numval;
-}
-
-function clearscreen() {
-    let dis = document.querySelector('.screen');
-    console.log(dis.value)
-    dis.value = "";
-}
-
-function calculate() {
-    let dis = document.querySelector('.screen');
-    let ans = eval(dis.value);
-    dis.value = ans;
-}
-
+buttonDiv.addEventListener("click", (event) => {
+    if (event.target.nodeName === 'BUTTON') {
+        if (event.target.id != '=' && event.target.id != 'C') {
+            dis.value += event.target.id;
+        }
+        else if (event.target.id == "=") {
+            dis.value = eval(dis.value);
+        }
+        else dis.value = "";
+    }
+    else return;
+})

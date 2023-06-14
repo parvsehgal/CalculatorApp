@@ -3,49 +3,46 @@
   <head>
     <title>calculator</title>
     <link rel="stylesheet" href="design.css" />
-    <script src="code.js"></script>
   </head>
   <body>
+    <!-- this div represents the whole page-->
     <div id="root">
+      <!-- this div represents the whole calculator -->
       <div class="main-body">
+        <!-- this div represents the display of the calculator-->
         <div class="content">
           <form action="" class="ans">
             <input type="text" class="screen" />
           </form>
         </div>
+        <!-- this div represents the buttons of the calculator -->
         <div class="buttons">
           <div class="operators">
-            <button type="button" class="add" onclick="operation('+')">
-              +
-            </button>
-            <button type="button" class="subtract" onclick="operation('-')">
-              -
-            </button>
-            <button type="button" class="multiply" onclick="operation('*')">
-              *
-            </button>
-            <button type="button" class="divide" onclick="operation('/')">
-              /
-            </button>
+            <button class="add" id="+">+</button>
+            <button class="add" id="-">-</button>
+            <button class="add" id="*">*</button>
+            <button class="add" id="/">/</button>
           </div>
           <div class="numbers">
-            <button type="button" class="num" onclick="numclick('1')">1</button>
-            <button type="button" class="num" onclick="numclick('2')">2</button>
-            <button type="button" class="num" onclick="numclick('3')">3</button>
-            <button type="button" class="num" onclick="numclick('4')">4</button>
-            <button type="button" class="num" onclick="numclick('5')">5</button>
-            <button type="button" class="num" onclick="numclick('6')">6</button>
-            <button type="button" class="num" onclick="numclick('7')">7</button>
-            <button type="button" class="num" onclick="numclick('8')">8</button>
-            <button type="button" class="num" onclick="numclick('9')">9</button>
-            <button type="button" class="num" onclick="numclick('0')">0</button>
+            <button class="num" id="1">1</button>
+            <button class="num" id="2">2</button>
+            <button class="num" id="3">3</button>
+            <button class="num" id="4">4</button>
+            <button class="num" id="5">5</button>
+            <button class="num" id="6">6</button>
+            <button class="num" id="7">7</button>
+            <button class="num" id="8">8</button>
+            <button class="num" id="9">9</button>
+            <button class="num" id="0">0</button>
+            <button class="num" id=".">.</button>
           </div>
           <div class="equal-clr">
-            <button class="equal" onclick="calculate()">=</button>
-            <button class="clr" onclick="clearscreen()">C</button>
+            <button class="equal" id="=">=</button>
+            <button class="clr" id="C">C</button>
           </div>
         </div>
       </div>
     </div>
+    <script src="code.js"></script>
   </body>
 </html>
