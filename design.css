@@ -51,7 +51,7 @@ body {
 .subtract,
 .divide,
 .multiply {
-  background-color: #fdfd96;
+  background-color: #b19cd8;
   color: black;
   height: 25px;
   width: 25px;
@@ -65,7 +65,7 @@ body {
 .subtract:hover,
 .divide:hover,
 .multiply:hover {
-  color: pink;
+  color: white;
 }
 /*numbered button styles*/
 .num {
